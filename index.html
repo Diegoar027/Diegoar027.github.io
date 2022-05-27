@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Arias | Violoncello</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/462b1e44f0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<header>
+<nav>
+   
+
+    <input type="checkbox" id="check">
+    <label for="check" class="bar-btn">
+        <i class="fa-solid fa-bars"></i>
+    </label>
+
+
+    <ul class="nav-menu">
+    
+         <li><a class="active" href="index.html">INICIO</a></li>
+         <li><a href="#bio-section">BIO</a></li></li>
+         <li><a href="#media-section">MEDIA</a></li></li>
+         <li><a href="#clases-section">CLASES </a></li></li>
+         <li><a href="#contacto-section">CONTACTO</a></li></li>
+
+    </ul>
+</nav>  
+</header>    
+
+<main>
+
+    <div>
+
+    <!-- BIO  -->
+    <section id="bio-section">
+
+        <h2>BIO</h2>
+
+        <div class="bio">
+        <div class="perfil">
+        <img src="imagenes/imagen.jpg" alt="imagen" class="imagen-perfil">
+        </div>
+        <div class="descripcion">
+        <p class="des-texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur omnis nesciunt suscipit earum? Saepe repudiandae animi eaque porro consectetur commodi, maxime, 
+        cumque labore dolor voluptatum rem, temporibus adipisci voluptate magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Deserunt fugit quaerat molestias dicta, officiis non adipisci incidunt aperiam laudantium necessitatibus ad, est deleniti, autem voluptates numquam sunt
+        nihil laborum delectus?
+        </p>
+        </div>
+        </div>
+    </section>
+    
+    <!-- MEDIA -->
+    <section id="media-section">    
+
+        <h2> MEDIA </h2>
+
+        <div class="media">
+        <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/cD4CnTbjkSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+        <br><br><br><br><br>
+        <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/okuzqYJ4qNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+           
+        </div>    
+    </section>
+ 
+  
+  
+    <!-- CLASES DE VIOLONCELLO -->
+    <section id="clases-section">
+        <h2> CLASES DE VIOLONCELLO </h2>
+        <div class="clases">
+        <div class="img-clases">
+        <img src="imagenes/18740778_1912544428988036_3382649323965841675_n.jpg" alt="img-clase" width="500px" height="300px">
+        </div>
+        <div class="desc-clases">
+        <p class="descripcion-clases">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio inventore repudiandae officia ex cum illo, 
+            fugiat quasi mollitia, rerum iste tempore minima ipsa doloremque maxime. At harum hic dolore doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Eaque deleniti odio expedita deserunt aut voluptatibus dolore facere commodi.
+            Eaque sequi, itaque molestias laudantium fuga animi laboriosam eveniet? Sapiente, quod vitae.
+        </p>
+        </div>
+    </div>
+    </section>
+    
+    <!-- CONTACTO -->
+    <section id="contacto-section">
+        <h2> CONTACTO </h2>
+
+        <div class="formulario">
+
+        <form action="" method="get">
+
+            <div>
+                <label for="nombre">Nombre:</label>
+                <span id="#error-nombre"></span>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+            <br>
+            <div>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span id="error-email"></span>
+            </div>
+            <br>
+            <div>
+                <textarea id="c" name="comentario" rows="10" cols="30">Comentarios:</textarea>
+            </div>
+            <br>
+            <button type="submit">Enviar</button>
+            <p class="warnings" id="warnings"></p>
+
+        </form>
+        </div>
+
+    </section>
+</div>
+    
+</main>
+
+
+<footer>
+    <p>Arias Diego | Codo a Codo 2022</p>
+</footer>
+
+
+<script src="JS/script.js"></script>
+</body>
+
+
+</html>

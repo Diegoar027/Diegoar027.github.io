@@ -1,0 +1,286 @@
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+* {
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: "Montserrat", sans-serif; 
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagenes/Portada.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+h2 {
+    display: inline-block;
+    position: relative;
+    margin: 40px;
+    font-size: 3.5vw;
+}
+
+h2::after,h2::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: black;
+    top: 0.6em;
+    /* ANIMACION */
+    transform: scale(0);
+    transition: all 0.2s ease-in;
+}
+
+/* ANIMACION */
+h2:hover::before,h2:hover::after {
+    transform: scale(1);
+}
+
+
+h2::before{
+    left: -140px;
+}
+
+h2::after{
+    right: -140px;
+}
+
+
+
+/* Barra de Navegación */
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.bar-btn {
+    font-size:25px;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(0, 0, 0, .95);
+    text-align: center;
+    transition: all .5s;
+} 
+
+.nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-menu li a {
+    color:#fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover {
+    color: rgb(248, 8, 8);
+    transition: .3s;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .nav-menu {
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li {
+    display: block;
+}
+
+
+
+/* Barra de Navegación Responsive para Destkop */
+
+@media screen and (min-width: 768px) {
+
+    nav {
+        height: 100px;
+    }
+
+    .bar-btn {
+        display: none;
+    }    
+
+    .nav-menu {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background:none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    } 
+    
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+    
+    .nav-menu li a {
+        font-size: 30px;   
+    }
+    
+}
+
+
+/* BIO */
+.imagen-perfil{
+    padding: 0 5px 20px 200px;
+}
+
+.bio {
+    margin: 60px auto 200px auto;
+    display: table;
+} 
+
+.descripcion{
+    font-size: 1.3rem;
+    background: gray;
+    text-align: center;
+    display: table-row-group;
+}
+
+p.des-texto::first-letter {
+    font-size: 3rem;
+}
+
+/* BIO Responsive para Destkop */
+@media screen and (min-width: 768px){
+
+.bio {
+    margin: 60px auto 200px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+
+.descripcion {
+    font-size: 1.3rem;
+    background: gray;
+    height: 550px;
+    width: 300px;
+    text-align: center;
+}    
+
+p.des-texto::first-letter {
+    font-size: 3rem;
+}
+
+
+}
+
+/* MEDIA */
+.media {
+    margin: 60px auto 200px auto;
+}
+
+
+
+/* CLASES DE VIOLONCELLO */
+.clases-cello {
+    margin: 60px auto 200px auto;
+    display: table;
+}
+
+.img-clases {
+    width: auto;
+    text-align: center;
+}
+
+.desc-clases {
+    font-size: 1.3rem;
+    background: gray;
+    text-align: center;
+    display: table-row-group;
+}
+
+p.descripcion-clases::first-letter {
+    font-size: 3rem;
+}
+
+/* Bio Responsive para Destkop */
+@media screen and (min-width: 768px){
+
+    .clases {
+        margin: 60px auto 200px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+    
+    .desc-clases {
+        font-size: 1.3rem;
+        background: gray;
+        height: 500px;
+        width: 300px;
+        text-align: center;
+    }    
+    
+    p.descripcion-clases::first-letter {
+        font-size: 3rem;
+    }
+}
+
+
+/* CONTACTO */
+.formulario {
+    margin: 60px auto 200px auto;
+}
+
+form {
+    text-align: center;
+}
+
+span {
+    color:red;
+}
+
+/* Footer */
+footer {
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 2px -2px 8px black;
+}
+
+
+
+
+
